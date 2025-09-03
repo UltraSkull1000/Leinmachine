@@ -19,7 +19,7 @@ public class General() : InteractionModuleBase // Modules with SlashCommands sho
         await RespondAsync($"*Pong! {(DateTime.Now - Context.Interaction.CreatedAt).ToString("fff")}ms*", ephemeral: true);
     }
 
-        public class RollAutocomplete : AutocompleteHandler
+    public class RollAutocomplete : AutocompleteHandler
     {
         public override async Task<AutocompletionResult> GenerateSuggestionsAsync(IInteractionContext context, IAutocompleteInteraction autocompleteInteraction, IParameterInfo parameter, IServiceProvider services)
         {
